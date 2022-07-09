@@ -54,7 +54,13 @@ http://127.0.0.1:8000/
 # and you will se this page
 ![Image text](imgsDocs/runing-project.png)
 
-# Something extra 
+
+# Here in the root of the project is a collection where you can add to post man and test the endpoints.
+```
+Restaurants.postman_collection.json
+```
+
+# Something extra
 ### you can use:
 ```
 cd prject_folder/
@@ -65,3 +71,4 @@ python manage.py createsuperuser
 ### just go to:
 ```
 http://127.0.0.1:8000/admin
+
