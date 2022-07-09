@@ -1,1 +1,1 @@
-web: gunicorn icard.wsgi
+web: gunicorn melpCore.wsgi
