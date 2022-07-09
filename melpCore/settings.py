@@ -19,8 +19,8 @@ env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
-DEBUG = env('DEBUG')
-SECRET_KEY = env('SECRET_KEY')
+DEBUG = False
+SECRET_KEY = 'django-insecure-z$a-_yb$aulf#$diokw*v$@l$ky83e5sa+#8+g(9_u%8zn#99*'
 
 environ.Env.read_env()
 
