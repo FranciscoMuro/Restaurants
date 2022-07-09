@@ -71,4 +71,17 @@ python manage.py createsuperuser
 ### just go to:
 ```
 http://127.0.0.1:8000/admin
+```
+# To fill the data base and prove the endpoints it is need it to execute this endpoint
+### with this post you will select in the section form-data the csv to fill the data base.
+
+
+### This is in our local machine
+![Image text](imgsDocs/fill-db.png)
+
+### This is in our "production" machine cite
+#### The only change is the url where we are making the requirements
+![Image text](imgsDocs/fill-db-prod.png)
+
+
 
