@@ -1,4 +1,5 @@
 from statistics import mode
+from xml.etree.ElementTree import tostring
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
@@ -15,3 +16,6 @@ class restaurant(models.Model):
     state = models.CharField("State where is located the restaurant", max_length=35)
     lat = models.FloatField("Latitude of the location of the restaurant")
     lng  = models.FloatField("Longitude of the location of the restaurant")
+
+    def __str__(self) -> str:
+        return self.name
