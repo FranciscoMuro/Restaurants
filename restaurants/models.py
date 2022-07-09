@@ -10,7 +10,7 @@ class restaurant(models.Model):
     name = models.CharField("Name of the restaurant", max_length=64)
     site = models.CharField("Web site of the restaurant", max_length=255)
     email = models.CharField("Email of the restaurant", max_length=62)
-    phone = models.CharField("Phone of the restaurant", max_length=10)
+    phone = models.CharField("Phone of the restaurant", max_length=15)
     street = models.CharField("Street where is located the restaurant", max_length=35)
     city = models.CharField("City where is located the restaurant", max_length=35)
     state = models.CharField("State where is located the restaurant", max_length=35)

@@ -21,4 +21,6 @@ __pycache__/
 env
 venv
 
-# javascript
+# python
+*.pyc
+__pycache*
