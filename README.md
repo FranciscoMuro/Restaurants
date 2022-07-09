@@ -1,4 +1,4 @@
-# First we need to install python3
+# First we need to run this project in local install python3
 ### 1.- To install python we just need to go to the official web cite and download the installer or follow the instruction for the respective system
 ### 2.- Now just need to install pip3 also install virualenv
 ```
@@ -23,7 +23,7 @@ deactivate
 ```
 ### 5.- now just need to install the requirements move to the project folder the use this comments:
 ```
-cd Transactions/
+cd <name_of_the_project?>/
 
 pip3 install -r requirements.txt
 ```
