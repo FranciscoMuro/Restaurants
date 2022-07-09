@@ -1,7 +1,4 @@
-Django
+django
 django-cors-headers
 djangorestframework
-sqlparse
-tzdata
-asgiref
-pytz
+django-environ
