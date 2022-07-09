@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "fe5408ee-8ab0-4c95-85b7-0026e487db11",
+		"name": "Restaurants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20595122"
+	},
+	"item": [
+		{
+			"name": "Requests",
+			"item": [
+				{
+					"name": "fill data base",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restaurants",
+									"type": "file",
+									"src": "/E:/Try/melp/melpCore/restaurants.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/fill-db/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								"fill-db",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRestaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"851f799f-0852-439e-b9b2-dfg123gtfpo8\",\r\n        \"rating\": 4,\r\n        \"name\": \"El fabuloso restaurant mexicano de paco\",\r\n        \"site\": \"https://el-fabuloso-restaurant-de-paco.com\",\r\n        \"email\": \"paco_manager@hotmail.com\",\r\n        \"phone\": \"444 123 890\",\r\n        \"street\": \"1376 de dios a tu santa casa\",\r\n        \"city\": \"Monterrey\",\r\n        \"state\": \"El de la ebriedad\",\r\n        \"lat\": 19.4400570537131,\r\n        \"lng\": -99.1270470974249\r\n    }"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/post-restaurant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								"post-restaurant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"851f799f-0852-439e-b9b2-dfg123gtfpo8\",\r\n        \"rating\": 4,\r\n        \"name\": \"El fabuloso restaurant mexicano de paco y su primo toto\",\r\n        \"site\": \"https://el-fabuloso-restaurant-de-paco-y-su-primo-toto.com\",\r\n        \"email\": \"paco_and_toto_manager@hotmail.com\",\r\n        \"phone\": \"555 231 890\",\r\n        \"street\": \"1376 de dios a tu santa casa\",\r\n        \"city\": \"Monterrey\",\r\n        \"state\": \"El de la ebriedad\",\r\n        \"lat\": 19.4400570537131,\r\n        \"lng\": -99.1270470974249\r\n    }"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/update-restaurant/851f799f-0852-439e-b9b2-dfg123gtfpo8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								"update-restaurant",
+								"851f799f-0852-439e-b9b2-dfg123gtfpo8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/delete-restaurant/851f799f-0852-439e-b9b2-dfg123gtfpo8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								"delete-restaurant",
+								"851f799f-0852-439e-b9b2-dfg123gtfpo8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/restaurants/statistics/19.4403016289445/-99.1262358490707/100",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"restaurants",
+								"statistics",
+								"19.4403016289445",
+								"-99.1262358490707",
+								"100"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
