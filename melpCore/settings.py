@@ -14,7 +14,6 @@ from pathlib import Path
 from corsheaders.defaults import default_headers
 import os
 import environ
-import django_heroku
 
 env = environ.Env()
 # reading .env file
@@ -156,5 +155,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
-
-django_heroku.settings(locals())
