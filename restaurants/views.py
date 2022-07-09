@@ -1,7 +1,5 @@
 # Utils
 import math
-from turtle import distance
-from numpy import average, mat
 import pandas as pd
 from restaurants.point import Point
 # Decorators
@@ -9,7 +7,6 @@ from django.views.decorators.csrf import csrf_exempt
 # Json
 from rest_framework.parsers import JSONParser
 from django.http import JsonResponse
-import json
 
 # Models
 from .models import restaurant

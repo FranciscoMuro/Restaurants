@@ -14,13 +14,14 @@ from pathlib import Path
 from corsheaders.defaults import default_headers
 import os
 import environ
+import django_heroku
 
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
-DEBUG = False
-SECRET_KEY = 'django-insecure-z$a-_yb$aulf#$diokw*v$@l$ky83e5sa+#8+g(9_u%8zn#99*'
+DEBUG = env('DEBUG')
+SECRET_KEY = env('SECRET_KEY')
 
 environ.Env.read_env()
 
@@ -155,3 +156,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+django_heroku.settings(locals())
